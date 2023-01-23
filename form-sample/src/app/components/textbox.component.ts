@@ -26,11 +26,8 @@ export class TextboxComponent implements ControlValueAccessor {
 
     constructor() { }
 
-    onValueChangeCallback: (_: any) => void = nonFn;
-    onTouchedCallback: () => void = nonFn;
-
-    //onValueChangeCallback: any = nonFn;
-    //onTouchedCallback: any = nonFn; 
+    onValueChangeCallback: any = nonFn;
+    onTouchedCallback: any = nonFn; 
 
    getModelOptions() {
     return { standalone: true, name: this.name! };
