@@ -1,0 +1,48 @@
+<form #myNgForm="ngForm" (ngSubmit)="onNgSubmit(myNgForm.value)">
+
+
+    <div class="g-wrap">
+        <div class="header">
+            <h2>Contact Form</h2>
+        </div>
+
+        <div class="fields">
+            <div>
+                <div>
+                    <textbox [(ngModel)]="contact.firstName" name="firstName" label="First Name"></textbox>
+                </div>
+                <div>
+                    <textbox [(ngModel)]="contact.lastName" name="lastName" label="Last Name"></textbox>
+                </div>
+                <div>
+                    <textbox [(ngModel)]="contact.emailAddress" name="emailAddress"  label="Email Address"></textbox>
+                </div>
+                <div>
+                    <textbox [(ngModel)]="contact.phoneNumber" name="phoneNumber" label="Phone Number"></textbox>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div><h3>Web Post Options</h3></div>
+            <div>
+                <button class="button" (click)="onHttpPostContact()">Post contact Object</button>
+            </div>
+            <div>
+                <input class="button" type="submit" value="Post myNgForm.value">
+            </div>
+            <div>
+                <input class="button" type="reset" value="Reset myNgForm">
+            </div>
+      
+        </div>
+
+        <div class="status"> <p>{{status}}</p> </div>
+<pre class="debug">
+contact: {{contact | json}}
+contactForm: {{myNgForm.value | json}}
+</pre>
+
+    </div>
+
+</form>

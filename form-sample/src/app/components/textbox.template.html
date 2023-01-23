@@ -1,0 +1,9 @@
+<label>{{label}}</label>
+<input 
+    type="text" 
+    (ngModelChange)="onValueChangeCallback($event)"  
+    [(ngModel)]="innerValue" 
+    [ngModelOptions]="getModelOptions()"
+    name="{{name}}"
+    placeholder="{{placeholder}}"  
+>
