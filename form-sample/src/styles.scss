@@ -8,6 +8,7 @@ body {
   background: linear-gradient(0deg, rgba(216,238,238,1) 0%, rgba(190,229,236,1) 100%);
   background: linear-gradient(203deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 
+  background: url('assets/earth-nasa-dark.png');
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,7 +16,7 @@ body {
 
 
 
-.g-wrap {
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -117,9 +118,6 @@ input[type="text"]:focus {
   color: rgb(255, 255, 255);
   box-shadow: -4px 0 -10px rgba(162, 249, 255, 0.3);
 }
-.ng-touched {
-  border-color: rgb(0, 195, 255) !important;
-}
 
 
 .button {
@@ -138,4 +136,19 @@ input[type="text"]:focus {
 
 .button:active {
   box-shadow: 0 4px 30px rgba(49, 190, 255, 0.596);
+}
+
+
+
+
+
+
+
+
+input[type="text"].ng-touched {
+  border-color: rgb(0, 195, 255) !important;
+}
+
+input[type="text"].ng-invalid {
+  border-color: rgb(255, 0, 0) !important;
 }
