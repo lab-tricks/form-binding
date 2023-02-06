@@ -6,12 +6,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TextboxComponent } from './components/textbox.component';
 import { ContactSampleComponent } from './contact-sample/contact-sample.component';
+import { NavigationMenu } from './side-navigation-menu/navigation-menu/navigation-menu.component';
+import { SubmenuList } from './side-navigation-menu/submenu-list/submenu-list.component';
+import { LinkItem } from './side-navigation-menu/link-item/link-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactSampleComponent,
-    TextboxComponent
+    TextboxComponent,
+    NavigationMenu,
+    SubmenuList,
+    LinkItem
   ],
   imports: [
     BrowserModule,
